@@ -4,6 +4,7 @@ import React, { useContext } from 'react'
 import Icon from './icon'
 import dynamic from 'next/dynamic'
 import { themeContext } from '../context/ThemeContext'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const DarkModeToggle = dynamic(() => import('./DarkModeToggle'), { ssr: false })
 
@@ -40,7 +41,10 @@ const PageWrapper: React.FC = ({ children }) => {
             {/* theme toggle goes here */}
             <DarkModeToggle theme={theme} onClick={setThemeHandler} />
           </div>
-          <div className="button_wrapper transition flex flex-row justify-center items-center">
+          <motion.div
+            layoutId="nav"
+            className="button_wrapper flex flex-row justify-center items-center"
+          >
             <Link href="/">
               <button className="button__ transition px-3 py-1 mx-2 uppercase w-24 text-xs leading-6 tracking-widest border dark:border-gray-200 border-gray-300 rounded-full dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 ">
                 Home
@@ -51,13 +55,22 @@ const PageWrapper: React.FC = ({ children }) => {
                 About
               </button>
             </Link>
-          </div>
-          <div className="inn_wrapper flex flex-col items-center justify-center w-full">
+          </motion.div>
+          <motion.div
+            layoutId="wrapper"
+            className="inn_wrapper flex flex-col items-center justify-center w-full"
+          >
             <span className="bar__ flex  border-t border-l border-r h-4 w-full  my-6 border-gray-300 dark:border-gray-400"></span>
-            {children}
+
+            <AnimatePresence exitBeforeEnter> {children}</AnimatePresence>
+
             <span className="bar__ flex  border-b border-l border-r h-4 w-full  my-6 border-gray-300 dark:border-gray-400"></span>
-          </div>
-          <div className="social_wrapper flex flex-row justify-center items-center h-11 border border-gray-50  bg-gray-50 dark:border-gray-400 dark:bg-blueGray-700 shadow-inner transition p-3 rounded-2xl">
+          </motion.div>
+          <motion.div
+            layout
+            layoutId="icon-wrapper"
+            className="social_wrapper flex flex-row justify-center items-center h-11 border border-gray-50  bg-gray-50 dark:border-gray-400 dark:bg-blueGray-700 shadow-inner transition p-3 rounded-2xl"
+          >
             <a
               href="https://www.github.com/chuddyjoachim"
               target="_blank"
@@ -98,7 +111,7 @@ const PageWrapper: React.FC = ({ children }) => {
             >
               <Icon name={'dribble'} />
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
