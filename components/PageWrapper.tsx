@@ -1,15 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import Icon from './icon'
 import dynamic from 'next/dynamic'
-import { themeType } from '../lib/types'
 import { themeContext } from '../context/ThemeContext'
 
 const DarkModeToggle = dynamic(() => import('./DarkModeToggle'), { ssr: false })
 
 const PageWrapper: React.FC = ({ children }) => {
-  //   const [theme, setTheme] = useState<themeType>('light')
   const { theme, setThemeHandler } = useContext(themeContext)
 
   const click = () =>
@@ -61,7 +59,7 @@ const PageWrapper: React.FC = ({ children }) => {
           </div>
           <div className="social_wrapper flex flex-row justify-center items-center h-11 border border-gray-50  bg-gray-50 dark:border-gray-400 dark:bg-blueGray-700 shadow-inner transition p-3 rounded-2xl">
             <a
-              href="http://github.com/chuddyjoachim"
+              href="https://www.github.com/chuddyjoachim"
               target="_blank"
               className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
               rel="noreferrer"
@@ -69,7 +67,7 @@ const PageWrapper: React.FC = ({ children }) => {
               <Icon name={'github'} />
             </a>
             <a
-              href="http://linkedin.com/chuddyjoachim"
+              href="https://www.linkedin.com/in/chuddyjoachim"
               target="_blank"
               className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
               rel="noreferrer"
@@ -77,15 +75,15 @@ const PageWrapper: React.FC = ({ children }) => {
               <Icon name={'linkedin'} />
             </a>
             <a
-              href="http://dev.to/chuddyjoachim"
+              href="https://www.dev.to/chuddyjoachim"
               target="_blank"
               className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
               rel="noreferrer"
             >
-              <Icon name={'dev'} className="" />
+              <Icon name={'dev'} />
             </a>
             <a
-              href="http://twitter.com/chuddyjoachim"
+              href="http://www.twitter.com/chuddyjoachim"
               target="_blank"
               className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
               rel="noreferrer"
@@ -93,7 +91,7 @@ const PageWrapper: React.FC = ({ children }) => {
               <Icon name={'twitter'} />
             </a>
             <a
-              href="http://dribble.com/chuddyjoachim"
+              href="http://www.dribble.com/chuddyjoachim"
               target="_blank"
               className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
               rel="noreferrer"
