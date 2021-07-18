@@ -10,7 +10,7 @@ interface DarkModeToggleProps {
 const DarkModeToggle: FC<DarkModeToggleProps> = ({ theme, onClick }) => {
   return (
     <div
-      className="w-full h-full flex flex-row justify-center items-center transition"
+      className="w-full h-full flex flex-row justify-center items-center transition animate-pulse"
       onClick={onClick}
     >
       <svg
