@@ -1,7 +1,5 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import PageWrapper from '../components/PageWrapper'
-import styles from '../styles/Home.module.css'
 import profileImage from '../assets/images/joachim2.jpg'
 import { motion } from 'framer-motion'
 

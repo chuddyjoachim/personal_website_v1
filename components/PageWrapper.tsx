@@ -69,7 +69,7 @@ const PageWrapper: React.FC = ({ children }) => {
           <motion.div
             layout
             layoutId="icon-wrapper"
-            className="social_wrapper flex flex-row justify-center items-center h-11 border border-gray-50  bg-gray-50 dark:border-gray-400 dark:bg-blueGray-700 shadow-inner transition p-3 rounded-2xl"
+            className="social_wrapper flex flex-row justify-center items-center h-11 border border-gray-50  bg-gray-50 dark:border-gray-400 dark:bg-blueGray-700 shadow-inner p-3 rounded-2xl"
           >
             <a
               href="https://www.github.com/chuddyjoachim"
@@ -104,7 +104,7 @@ const PageWrapper: React.FC = ({ children }) => {
               <Icon name={'twitter'} />
             </a>
             <a
-              href="http://www.dribble.com/chuddyjoachim"
+              href="http://www.dribbble.com/chuddyjoachim"
               target="_blank"
               className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
               rel="noreferrer"
