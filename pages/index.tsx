@@ -20,9 +20,9 @@ const Home = (): JSX.Element => (
             alt="al images"
           />
         </div>
-        <h1 className="font-semibold text-3xl tracking-widest ">CHIKEZIE JOACHIM</h1>
+        <h1 className="font-semibold text-3xl text-center tracking-widest ">CHIKEZIE JOACHIM</h1>
         <span className="w-28 border-t my-8"></span>
-        <h1 className="dev_title text-xl tracking-widest font-light">SOFTWARE DEVELOPER</h1>
+        <h1 className="dev_title text-xl tracking-widest text-center">SOFTWARE DEVELOPER</h1>
       </div>
     </motion.div>
   </PageWrapper>
