@@ -30,6 +30,7 @@ const PageWrapper: React.FC = ({ children }) => {
           property="og:description"
           content="More of a personal website, including social media contact links"
         />
+        <meta property="og:url" content="https://www.chuddyjoachim.com/" />
         <meta
          property="og:image"
          content="https://raw.githubusercontent.com/chuddyjoachim/personal_website_v1/main/assets/images/joachim2.jpg"
