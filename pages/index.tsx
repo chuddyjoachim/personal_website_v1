@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import PageWrapper from '../components/PageWrapper'
-import profileImage from '../assets/images/joachim2.jpg'
+import profileImage from '../assets/images/joachim.png'
 import { motion } from 'framer-motion'
 
 const Home = (): JSX.Element => (
