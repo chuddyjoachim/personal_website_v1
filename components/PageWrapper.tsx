@@ -32,8 +32,8 @@ const PageWrapper: React.FC = ({ children }) => {
         />
         <meta property="og:url" content="https://www.chuddyjoachim.com/" />
         <meta
-         property="og:image"
-         content="https://raw.githubusercontent.com/chuddyjoachim/personal_website_v1/main/assets/images/joachim2.jpg"
+          property="og:image"
+          content="https://raw.githubusercontent.com/chuddyjoachim/personal_website_v1/main/assets/images/joachim.png"
         />
         <meta data-react-helmet="true" property="og:type" content="website" />
         <meta data-react-helmet="true" property="twitter:card" content="summary" />
