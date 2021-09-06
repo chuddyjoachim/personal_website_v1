@@ -41,7 +41,7 @@ const PageWrapper: React.FC = ({ children }) => {
       </Head>
 
       <div className="wrapper transition flex flex-col items-center justify-center w-screen h-screen bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
-        <div className="inner_wrapper flex flex-col items-center justify-center w-2/3 w-min-24rem w-max-37">
+        <div className="inner_wrapper flex flex-col items-center justify-center w-11/12 md:w-2/3 w-min-24rem w-max-37">
           <div className="button-click w-16 h-16 shadow-inner border-gray-50 fixed top-4 right-4 cursor-pointer transition rounded-full">
             {/* theme toggle goes here */}
             <DarkModeToggle theme={theme} onClick={setThemeHandler} />
