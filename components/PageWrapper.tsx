@@ -5,47 +5,19 @@ import Icon from './icon'
 import dynamic from 'next/dynamic'
 import { themeContext } from '../context/ThemeContext'
 import { AnimatePresence, motion } from 'framer-motion'
+import Header from './header'
 
 const DarkModeToggle = dynamic(() => import('./DarkModeToggle'), { ssr: false })
 
 const PageWrapper: React.FC = ({ children }) => {
-  const { theme, setThemeHandler } = useContext(themeContext)
-
-  const click = () =>
-    theme == 'light' ? setThemeHandler : theme == 'dark' ? setThemeHandler : null
 
   return (
+    <>
+    <Header page="home"/>
     <div>
-      <Head>
-        <title>Chikezie Joachim - chuddyjoachim</title>
-        <meta name="chuddyjoachim" content="chuddyjoachim personal web site" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          data-react-helmet="true"
-          property="og:title"
-          content="CHIKEZIE JOACHIM (chuddyjoachim)"
-        />
-        <meta
-          data-react-helmet="true"
-          property="og:description"
-          content="More of a personal website, including social media contact links"
-        />
-        <meta property="og:url" content="https://www.chuddyjoachim.com/" />
-        <meta
-          property="og:image"
-          content="https://raw.githubusercontent.com/chuddyjoachim/personal_website_v1/main/assets/images/joachim.png"
-        />
-        <meta data-react-helmet="true" property="og:type" content="website" />
-        <meta data-react-helmet="true" property="twitter:card" content="summary" />
-        <meta data-react-helmet="true" property="twitter:creator" content="@chuddyjoachim" />
-      </Head>
-
-      <div className="wrapper transition flex flex-col items-center justify-center w-screen h-screen bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
+      <div className="wrapper transition flex flex-col items-center justify-center w-screen min-h-screen bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
         <div className="inner_wrapper flex flex-col items-center justify-center w-11/12 md:w-2/3 w-min-24rem w-max-37">
-          <div className="button-click w-16 h-16 shadow-inner border-gray-50 fixed top-4 right-4 cursor-pointer transition rounded-full">
-            {/* theme toggle goes here */}
-            <DarkModeToggle theme={theme} onClick={setThemeHandler} />
-          </div>
+          
           <motion.div
             layoutId="nav"
             className="button_wrapper flex flex-row justify-center items-center"
@@ -120,6 +92,7 @@ const PageWrapper: React.FC = ({ children }) => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
