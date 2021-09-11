@@ -21,8 +21,10 @@ const Home = (): JSX.Element => (
           />
         </div>
         <h1 className="font-semibold text-3xl text-center tracking-widest ">CHIKEZIE JOACHIM</h1>
-        <span className="w-28 border-t my-8"></span>
-        <h1 className="dev_title text-xl tracking-widest text-center">SOFTWARE DEVELOPER</h1>
+        <span className="w-28 border-t my-4"></span>
+        <h3 className="dev_title text-xl tracking-wide font-semibold text-gray-400 md:tracking-widest text-center">UI DESIGNER</h3>
+        <span className="w-2 h-7 my-1 border border-gray-50  bg-gray-200 dark:border-gray-400 dark:bg-blueGray-700 rounded-full shadow-sm"></span>
+        <h1 className="dev_title text-xl tracking-wide font-semibold text-gray-400 md:tracking-widest text-center">SOFTWARE DEVELOPER</h1>
       </div>
     </motion.div>
   </PageWrapper>
