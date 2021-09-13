@@ -17,9 +17,9 @@ const About = (): JSX.Element => (
         also scalable <strong>Backend</strong> services(API services and async mechanism).
       </h1>
       <h1 className="text-center">
-        I also made out time to engage in <strong>UI Design</strong>, so far i have a wide range of
+        I also made out time to engage in <strong>UX/UI Design</strong>, so far i have a wide range of
         knowledge in Design principles and concept, and also have attained proficiency in using
-        design tools such as <strong>Adobe XD</strong> and <strong>Figma</strong>
+        design tools such as <strong>Adobe XD</strong>, <strong>Figma</strong> e.t.c.
       </h1>
     </motion.div>
   </PageWrapper>

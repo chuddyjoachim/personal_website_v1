@@ -32,6 +32,11 @@ const PageWrapper: React.FC = ({ children }) => {
                 About
               </button>
             </Link>
+            <Link passHref={true} href="/contact">
+              <button className="button__ transition px-3 py-1 mx-2 uppercase w-24 text-xs leading-6 tracking-widest border dark:border-gray-200 border-gray-300 rounded-full dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 ">
+                Contact
+              </button>
+            </Link>
           </motion.div>
           <motion.div
             layoutId="wrapper"
