@@ -17,7 +17,10 @@ const Header: FC<PageTypeProp> = ({ page }) => {
       <Head>
         <title>Chikezie Joachim - chuddyjoachim</title>
         <meta name="chuddyjoachim" content="chuddyjoachim personal web site" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./tavicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="./site.webmanifest" />
         <meta
           data-react-helmet="true"
           property="og:title"
@@ -50,7 +53,7 @@ const Header: FC<PageTypeProp> = ({ page }) => {
               Intro
             </li>
           </Link>
-          <Link passHref={true} href="/porfolio">
+         {/*  <Link passHref={true} href="/porfolio">
             <li
               className={
                 page == 'portfolio'
@@ -60,7 +63,7 @@ const Header: FC<PageTypeProp> = ({ page }) => {
             >
               Portfolio
             </li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
       <div className="button-click w-8 h-8 md:w-16 md:h-16 shadow-inner border-gray-50 fixed top-4 right-4 cursor-pointer transition rounded-full dark:text-gray-300 z-10">
