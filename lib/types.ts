@@ -1,7 +1,7 @@
 const themetype = ['light', 'dark'] as const
 const iconArray = ['github', 'linkedin', 'dev', 'twitter', 'dribble'] as const
 const pageArray = ['home', 'portfolio'] as const
-const pageTabsArray = ['ui', 'dev'] as const
+const pageTabsArray = ['all','ui', 'dev'] as const
 
 /* interfaces */
 interface themeContextInterface {

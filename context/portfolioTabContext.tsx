@@ -2,7 +2,7 @@ import React, { createContext, FC, useState } from 'react'
 import { pageTabContextType, pageTabstype } from '../lib/types'
 
 export const pTabContext = createContext<pageTabContextType>({
-  portfolioTabs: 'dev',
+  portfolioTabs: 'all',
   setPortfolioTab: () => {},
 })
 
