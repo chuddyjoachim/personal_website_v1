@@ -40,7 +40,7 @@ const Header: FC<PageTypeProp> = ({ page }) => {
         <meta data-react-helmet="true" property="twitter:card" content="summary" />
         <meta data-react-helmet="true" property="twitter:creator" content="@chuddyjoachim" />
       </Head>
-      <nav className="transition flex flex-row justify-center items-center relative py-4 bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
+      <nav className="transition flex flex-row justify-center items-center sticky top-0 py-4 bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
         <ul className="flex flex-row justify-center items-center relative">
           <Link passHref={true} href="/">
             <li
