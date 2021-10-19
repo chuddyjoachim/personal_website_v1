@@ -13,8 +13,8 @@ const PageWrapper: React.FC = ({ children }) => {
 
   return (
     <>
+    <div className="relative">
     <Header page="home"/>
-    <div>
       <div className="wrapper transition flex flex-col items-center justify-center w-screen min-h-screen bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
         <div className="inner_wrapper flex flex-col items-center justify-center w-11/12 md:w-2/3 w-min-24rem w-max-37">
           
@@ -51,7 +51,7 @@ const PageWrapper: React.FC = ({ children }) => {
           <motion.div
             layout
             layoutId="icon-wrapper"
-            className="social_wrapper flex flex-row justify-center items-center h-11 border border-gray-50  bg-gray-50 dark:border-gray-400 dark:bg-blueGray-700 shadow-inner p-3 rounded-2xl"
+            className="social_wrapper flex flex-row justify-center items-center h-11 border border-gray-50  bg-gray-50 dark:border-gray-400 dark:bg-blueGray-700 shadow-inner p-3 px-1.5 rounded-2xl"
           >
             <a
               href="https://www.github.com/chuddyjoachim"
@@ -60,6 +60,14 @@ const PageWrapper: React.FC = ({ children }) => {
               rel="noreferrer"
             >
               <Icon name={'github'} />
+            </a>
+            <a
+              href="https://www.behance.net/chukwudijoachim"
+              target="_blank"
+              className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
+              rel="noreferrer"
+            >
+              <Icon name={'behance'} />
             </a>
             <a
               href="https://www.linkedin.com/in/chuddyjoachim"
@@ -84,6 +92,14 @@ const PageWrapper: React.FC = ({ children }) => {
               rel="noreferrer"
             >
               <Icon name={'twitter'} />
+            </a>
+            <a
+              href="http://www.instagram.com/chuddyjoachim"
+              target="_blank"
+              className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
+              rel="noreferrer"
+            >
+              <Icon name={'instagram'} />
             </a>
             <a
               href="http://www.dribbble.com/chuddyjoachim"
