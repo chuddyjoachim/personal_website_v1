@@ -35,7 +35,6 @@ const Header: FC<PageTypeProp> = ({ page }) => {
         <meta
           property="og:image"
           content="https://avatars.githubusercontent.com/u/56943504?u=fbc9e93c2056539d0444bbec2933d48c6bf6dc0a&v=4"
-<!--           content="https://raw.githubusercontent.com/chuddyjoachim/personal_website_v1/main/assets/images/joachim.png" -->
         />
         <meta data-react-helmet="true" property="og:type" content="website" />
         <meta data-react-helmet="true" property="twitter:card" content="summary" />
