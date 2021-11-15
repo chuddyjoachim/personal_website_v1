@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .projectcard_left {
+    max-width: 41.6667%;
+    flex: 0 0 41.6667%;
+  }
+  .fwhite{
+      background-color: #f9f9f9;
+  }
+}

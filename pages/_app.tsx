@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import '../styles/tailwind.css'
 import type { AppProps } from 'next/app'
 import React from 'react'
 import ThemeContextProvider from '../context/ThemeContext'
