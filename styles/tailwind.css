@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-white dark:bg-blueGray-900 transition;
+  }
+}
+
 @layer utilities {
+  /* body{
+    background: red;
+  } */
   .projectcard_left {
     max-width: 41.6667%;
     flex: 0 0 41.6667%;
