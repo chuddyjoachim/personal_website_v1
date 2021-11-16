@@ -4,7 +4,6 @@ import ProjectCard from '../projectcard'
 const uiData = projectdata.filter((alldata) => {
   return alldata.type == 'dev' ? alldata : null
 })
-console.log(uiData)
 
 const Developement = () => {
   return (
