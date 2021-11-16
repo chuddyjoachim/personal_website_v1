@@ -8,7 +8,7 @@ export const pTabContext = createContext<pageTabContextType>({
 
 const PTabContextProvider: FC = ({ children }) => {
 
-  let initioalValue = 'dev' as pageTabstype
+  let initioalValue = 'all' as pageTabstype
 
   const [portfolioTabs, setPortfolioTab] = useState<pageTabstype>(() => {
     return initioalValue
