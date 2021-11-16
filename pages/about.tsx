@@ -23,7 +23,7 @@ const About = (): JSX.Element => (
         Design principles and concept, and also have attained proficiency in using design tools such
         as <strong>Adobe XD</strong>, <strong>Figma</strong> e.t.c.
       </h1>
-      <Link href="/porfolio">
+      <Link passHref href="/porfolio">
         <div className="flex items-center justify-center cursor-pointer shadow">
           <p className="p-1 px-3 flex w-auto bg-green-300 text-white items-center justify-center mt-2">
             View Portfolio <span className="text-2xl">↗</span>{' '}
