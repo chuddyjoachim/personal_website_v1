@@ -1,19 +1,26 @@
 import React, { FC } from 'react'
-import Image from 'next/dist/client/image'
-import netflix from '../../assets/projectimages/ui/netflix.jpg'
+import Image from 'next/image'
+import netflix from '/assets/projectimages/ui/netflix.jpg'
 import Icon from '../icon'
+import { iconType } from '../../lib/types'
 
-type productLinks = { icons: string; url: string }
+interface productLinks {
+  id: number
+  icons: iconType
+  url: string
+  size: string
+}
 
-interface PrjectCardProps {
+export interface PrjectCardProps {
+  // id: number
   type: string
   title: string
   description: string
-  imgUrl?: string
+  imgUrl: any
   imgBg?: string
   links?: productLinks[]
 }
-const ProjectCard: FC<PrjectCardProps> = () => {
+const ProjectCard: FC<PrjectCardProps> = ({ type, title, description, imgUrl, imgBg, links }) => {
   return (
     <>
       <div className="w-full relative shadow-md rounded-md bg-white " id="cardbox">
@@ -23,8 +30,8 @@ const ProjectCard: FC<PrjectCardProps> = () => {
               className="projectcard_left relative flex justify-center items-center p-0"
               id="left__ "
             >
-              <div className="flex bg-white h-auto">
-                <Image src={netflix} className="w-full h-full bg-cover " alt="al images" />
+              <div className="flex relative w-full">
+                <Image src={imgUrl} className="object-cover w-full h-full" alt="alimages" />
               </div>
             </div>
             <div
@@ -35,41 +42,38 @@ const ProjectCard: FC<PrjectCardProps> = () => {
                 <div className="flex flex-col w-full relative  h-full">
                   <div className="flex ">
                     <div className="py-1 text-xs font-medium" id="tag_">
-                      <p className="text-gray-300 dark:text-gray-400 transition">UI Design</p>
+                      <p className="text-gray-300 dark:text-gray-400 transition">{type.toUpperCase()}</p>
                     </div>
                   </div>
                   <div className="" id="title">
                     <h2 className="my-1 font-medium text-2xl text-gray-700 transition dark:text-gray-50">
-                      Flex Vest
+                      {title}
                     </h2>
                   </div>
                   <div className="" id="dsc">
                     <p className="leading-tight text-base font-normal my-2 text-gray-400 transition dark:text-gray-200">
-                      Financial, saving and investment app design
+                      {description}
                     </p>
                   </div>
                   <div className="flex relative my-3" id="icon-links">
-                    <ul className=" flex relative items-center flex-row space-x-3">
-                      <li className="flex ">
-                        <a
-                          href="https://www.behance.net/chukwudijoachim"
-                          target="_blank"
-                          className=" relative text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
-                          rel="noreferrer"
-                        >
-                          <Icon name={'behance'} width="1.55rem" />
-                        </a>
-                      </li>
-                      <li className="flex space-x-2">
-                        <a
-                          href="https://www.behance.net/chukwudijoachim"
-                          target="_blank"
-                          className=" relative text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
-                          rel="noreferrer"
-                        >
-                          <Icon name={'dribble'} width="1.85rem" />
-                        </a>
-                      </li>
+                    <ul className=" flex relative items-center flex-row space-x-3.5">
+                      {/* links */}
+                      {links
+                        ? links.map((link) => (
+                            <li key={link.id} className="flex ">
+                              <a
+                                href={link.url}
+                                target="_blank"
+                                className=" relative text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
+                                rel="noreferrer"
+                              >
+                                <Icon name={link.icons} width={link.size} />
+                              </a>
+                            </li>
+                          ))
+                        : null}
+
+                      {/* links */}                     
                     </ul>
                   </div>
                 </div>

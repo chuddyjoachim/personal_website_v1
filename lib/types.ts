@@ -1,5 +1,5 @@
 const themetype = ['light', 'dark'] as const
-const iconArray = ['github', 'linkedin', 'dev', 'twitter', 'dribble', 'behance', 'instagram'] as const
+const iconArray = ['github', 'linkedin', 'dev', 'twitter', 'dribble', 'behance', 'instagram', 'link'] as const
 const pageArray = ['home', 'portfolio'] as const
 const pageTabsArray = ['all','ui', 'dev'] as const
 
