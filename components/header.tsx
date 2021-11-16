@@ -24,12 +24,12 @@ const Header: FC<PageTypeProp> = ({ page }) => {
         <meta
           data-react-helmet="true"
           property="og:title"
-          content="CHIKEZIE JOACHIM (chuddyjoachim)"
+          content="chikezie joachim - chuddyjoachim"
         />
         <meta
           data-react-helmet="true"
           property="og:description"
-          content="More of a personal website, including social media contact links"
+          content="product designer and software developer in lagos nigeria more of a personal website, including social media contact links"
         />
         <meta property="og:url" content="https://www.chuddyjoachim.com/" />
         <meta
@@ -40,33 +40,35 @@ const Header: FC<PageTypeProp> = ({ page }) => {
         <meta data-react-helmet="true" property="twitter:card" content="summary" />
         <meta data-react-helmet="true" property="twitter:creator" content="@chuddyjoachim" />
       </Head>
-      <nav className="transition flex flex-row justify-center items-center sticky top-0 py-4 bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
+      <div className="flex justify-center bg-white dark:bg-blueGray-900 z-20">
+      <nav className="transition flex flex-row z-30 justify-center items-center fixed top-0 py-3 bg-white dark:bg-blueGray-900 text-gray-800 dark:text-gray-300">
         <ul className="flex flex-row justify-center items-center relative">
           <Link passHref={true} href="/">
             <li
               className={
                 page == 'home'
-                  ? 'font-semibold transition px-2 py-1 mx-1 uppercase text-green-600 dark:text-green-300 text-xs leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
-                  : 'font-semibold transition px-2 py-1 mx-1 uppercase dark:text-gray-300 text-xs leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
+                  ? 'font-extrabold transition px-2 py-1 mx-1 uppercase text-green-600 dark:text-green-300 text-sm leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
+                  : 'font-semibold transition px-2 py-1 mx-1 uppercase dark:text-gray-300 text-sm leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
               }
             >
               Intro
             </li>
           </Link>
-         {/*  <Link passHref={true} href="/porfolio">
+          <Link passHref={true} href="/porfolio">
             <li
               className={
                 page == 'portfolio'
-                  ? 'font-semibold transition px-2 py-1 mx-1 uppercase text-green-600 dark:text-green-300 text-xs leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
-                  : 'font-semibold transition px-2 py-1 mx-1 uppercase dark:text-gray-300 text-xs leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
+                  ? 'font-extrabold transition px-2 py-1 mx-1 uppercase text-green-600 dark:text-green-300 text-sm leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
+                  : 'font-semibold transition px-2 py-1 mx-1 uppercase dark:text-gray-300 text-sm leading-6 tracking-widest cursor-pointer dark:border-gray-200 dark:hover:text-green-300  hover:text-green-600 hover:border-green-600 dark:hover:border-green-300 text-center'
               }
             >
               Portfolio
             </li>
-          </Link> */}
+          </Link>
         </ul>
       </nav>
-      <div className="button-click w-8 h-8 md:w-16 md:h-16 shadow-inner border-gray-50 fixed top-4 right-4 cursor-pointer transition rounded-full dark:text-gray-300 z-10">
+      </div>
+      <div className="button-click w-8 h-8 md:w-16 md:h-16 shadow-inner border-gray-50 fixed top-4 right-4 cursor-pointer transition rounded-full dark:text-gray-300 z-30">
         {/* theme toggle goes here */}
         <DarkModeToggle theme={theme} onClick={setThemeHandler} />
       </div>
