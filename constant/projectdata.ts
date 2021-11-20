@@ -3,6 +3,7 @@ import { iconType } from '../lib/types'
 import flexvest from '/assets/projectimages/ui/flexvest.png'
 import vergecomerce from '/assets/projectimages/ui/vergecomerce.png'
 import designtaxi from '/assets/projectimages/ui/designtaxi.png'
+import daspy from '/assets/projectimages/ui/daspy.png'
 import nexturl from '/assets/projectimages/dev/nexturl.png'
 import expensetracker from '/assets/projectimages/dev/expensetracker.png'
 import gitfindr from '/assets/projectimages/dev/gitfindr.png'
@@ -25,16 +26,16 @@ const projectData = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     type: 'design',
-    title: 'Verge Comerce',
-    description: 'Flower ecomerce app',
-    imgUrl: vergecomerce,
+    title: 'Daspy',
+    description: 'Digital marketing solution agency',
+    imgUrl: daspy,
     links: [
       {
         id: 1,
         icons: 'behance' as iconType,
-        url: 'https://www.behance.net/gallery/128874717/Verge-commerce',
+        url: 'https://www.behance.net/gallery/131650031/Daspy',
         size: '1.6rem',
       },
     ],
@@ -54,6 +55,21 @@ const projectData = [
         size: '1.85rem',
       },
       { id: 1, icons: 'link' as iconType, url: 'https://nexturl.vercel.app/', size: '1.6rem' },
+    ],
+  },
+  {
+    id: 5,
+    type: 'design',
+    title: 'Verge Comerce',
+    description: 'Flower ecomerce app',
+    imgUrl: vergecomerce,
+    links: [
+      {
+        id: 1,
+        icons: 'behance' as iconType,
+        url: 'https://www.behance.net/gallery/128874717/Verge-commerce',
+        size: '1.6rem',
+      },
     ],
   },
   {
