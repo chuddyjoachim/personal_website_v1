@@ -24,7 +24,7 @@ const Home = (): JSX.Element => (
               alt="al images"
             />
           </div>
-          <h1 className="font-semibold text-3xl text-center tracking-widest ">CHIKEZIE JOACHIM</h1>
+          <h1 className="font-semibold text-3xl text-center tracking-widest ">JOACHIM CHIKEZIE</h1>
           <span className="w-28 border-t my-4"></span>
           <h3 className="dev_title text-xl tracking-wide font-semibold text-gray-400 md:tracking-widest text-center flex">
             <Typewriter
