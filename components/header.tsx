@@ -54,7 +54,7 @@ const Header: FC<PageTypeProp> = ({ page }) => {
               Intro
             </li>
           </Link>
-          <Link passHref={true} href="/porfolio">
+          {/* <Link passHref={true} href="/porfolio">
             <li
               className={
                 page == 'portfolio'
@@ -64,7 +64,7 @@ const Header: FC<PageTypeProp> = ({ page }) => {
             >
               Portfolio
             </li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
       </div>
