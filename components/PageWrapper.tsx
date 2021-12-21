@@ -62,7 +62,7 @@ const PageWrapper: React.FC = ({ children }) => {
               <Icon name={'github'} />
             </a>
             <a
-              href="https://www.behance.net/chukwudijoachim"
+              href="https://www.behance.net/chuddyjoachim"
               target="_blank"
               className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
               rel="noreferrer"
