@@ -46,7 +46,7 @@ const PageWrapper: React.FC = ({ children }) => {
 
             <AnimatePresence exitBeforeEnter> {children}</AnimatePresence>
 
-            <span className="bar__ flex  border-b border-l border-r h-4 w-full  my-6 border-gray-300 dark:border-gray-400"></span>
+            <span className="bar__ flex  border-b border-lW border-r h-4 w-full  my-6 border-gray-300 dark:border-gray-400"></span>
           </motion.div>
           <motion.div
             layout
@@ -100,14 +100,6 @@ const PageWrapper: React.FC = ({ children }) => {
               rel="noreferrer"
             >
               <Icon name={'instagram'} />
-            </a>
-            <a
-              href="http://www.dribbble.com/chuddyjoachim"
-              target="_blank"
-              className="my-5 mx-2 text-gray-400 dark:text-gray-300 dark:hover:text-green-400 hover:text-green-500"
-              rel="noreferrer"
-            >
-              <Icon name={'dribble'} />
             </a>
           </motion.div>
         </div>

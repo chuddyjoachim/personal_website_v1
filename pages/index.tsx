@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import PageWrapper from '../components/PageWrapper'
-import profileImage from '../assets/images/joachim.png'
+import profileImage from '../assets/images/joachim-2021.jpg'
 import { motion } from 'framer-motion'
 import Typewriter from 'typewriter-effect'
 import React from 'react'
