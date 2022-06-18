@@ -10,7 +10,7 @@ const index = () => {
           <div className="container px-4 md:px-2 max-w-5xl">
             <section>
               <div className=" w-full flex justify-center">
-                <img src="/images/ux-ui/Deut-flowers.png" className="w-full max-w-2xl" alt="" />
+                <img src="/images/ux-ui/Deut-flowers.png" className="w-full max-w-2xl object-cover" alt="" />
               </div>
               <div className="mt-5">
                 <div className="block space-y-3">
@@ -88,7 +88,7 @@ const index = () => {
                     <div className="my-2 flex justify-center mb-2">
                       <img
                         src="/images/ux-ui/duet-user-story.png"
-                        className="flex-1 w-full border border-green-200"
+                        className="flex-1 w-full border border-green-200 object-cover"
                         alt="research"
                       />
                     </div>
@@ -98,7 +98,7 @@ const index = () => {
                     <div className="my-2 flex justify-center mb-2">
                       <img
                         src="/images/ux-ui/duet-problem-statement.png"
-                        className="flex-1 w-full border border-green-200"
+                        className="flex-1 w-full border border-green-200 object-cover"
                         alt="research"
                       />
                     </div>
@@ -112,13 +112,13 @@ const index = () => {
                 <strong>Site map</strong>
               </h1>
               <div className="">
-                <img src="/images/ux-ui/duet-sitemap.png" alt="" />
+                <img src="/images/ux-ui/duet-sitemap.png" className='object-cover' alt="" />
               </div>
               <h1 className="text-3xl my-3 mt-3">
                 <strong>Low fidelity Design</strong>
               </h1>
               <div className="">
-                <img src="/images/ux-ui/duet-lofi.png" alt="" />
+                <img src="/images/ux-ui/duet-lofi.png" className='object-cover' alt="" />
               </div>
             </section>
             <section className="mt-16">
@@ -136,7 +136,7 @@ const index = () => {
                   <a
                     href="https://xd.adobe.com/view/6667d080-b0d5-40a8-a7c8-e452ae731c43-3334/?fullscreen"
                     className="font-bold text-blue-300 underline"
-                    target={'_blank'}
+                    target={'_blank'} rel="noreferrer"
                   >
                     low-fidelity prototype
                   </a>
@@ -150,7 +150,7 @@ const index = () => {
                     <strong>High-fidelity mockup design</strong>
                   </h1>
                   <div className="">
-                    <img src="/images/ux-ui/duet-mockup.png" alt="duet mockup" />
+                    <img src="/images/ux-ui/duet-mockup.png" className='object-cover' alt="duet mockup" />
                   </div>
                 </div>
 
@@ -161,7 +161,7 @@ const index = () => {
                   </h1>
                   <img
                     src="/images/ux-ui/duet-hifi.png"
-                    className="flex-1 w-full"
+                    className="flex-1 w-full object-cover"
                     alt="duet-lofi"
                   />
                   {/* </div> */}
@@ -175,7 +175,7 @@ const index = () => {
                   <a
                     href="https://xd.adobe.com/view/5b4df141-6c1c-41a2-83dd-a7bd11d830f7-0e1e/?fullscreen"
                     className="font-bold text-blue-300 underline"
-                    target={'_blank'}
+                    target={'_blank'} rel="noreferrer"
                   >
                     High-fidelity prototype
                   </a>
@@ -227,7 +227,7 @@ const index = () => {
                           <a
                             href="https://www.linkedin.com/in/chuddyjoachim/"
                             className="font-bold text-blue-300 underline"
-                            target={'_blank'}
+                            target={'_blank'} rel="noreferrer"
                           >
                             Joachim Chikezie | LinkedIn
                           </a>

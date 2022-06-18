@@ -141,7 +141,7 @@ const index = () => {
                   <a
                     href="https://www.figma.com/proto/fgLezpnHkKYOtyve2couUk/job-search-google-ux?node-id=107%3A24&scaling=scale-down&page-id=107%3A2&starting-point-node-id=107%3A4"
                     className="font-bold text-blue-300 underline"
-                    target={'_blank'}
+                    target={'_blank'} rel="noreferrer"
                   >
                     low-fidelity prototype
                   </a>
@@ -188,7 +188,7 @@ const index = () => {
                   <a
                     href="https://www.figma.com/proto/3rTlInuRvHy1XDUtwX8vE1/portfolio?node-id=515%3A59&scaling=scale-down&page-id=0%3A1&starting-point-node-id=515%3A59"
                     className="font-bold text-blue-300 underline"
-                    target={'_blank'}
+                    target={'_blank'} rel="noreferrer"
                   >
                     High-fidelity prototype
                   </a>
@@ -239,7 +239,7 @@ const index = () => {
                           <a
                             href="https://www.linkedin.com/in/chuddyjoachim/"
                             className="font-bold text-blue-300 underline"
-                            target={'_blank'}
+                            target={'_blank'} rel="noreferrer"
                           >
                             Joachim Chikezie | LinkedIn
                           </a>
