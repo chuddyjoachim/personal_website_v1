@@ -14,9 +14,8 @@ const About = (): JSX.Element => (
       className="padding px-4 flex flex-col justify-center items-center"
     >
       <h1 className="text-center mb-4">
-        Hi 👋 , i'm <strong>JOACHIM</strong> a proficient full-stack developer, with high end
-        experience in developing <strong>WEB</strong> and <strong>MOBILE</strong> applications, And
-        also scalable <strong>Backend</strong> services(API services and async mechanism).
+        Hi 👋 , i'm <strong>JOACHIM</strong> a frontend developer, with experience in developing{' '}
+        <strong>WEB</strong> and <strong>MOBILE</strong> applications.
       </h1>
       <h1 className="text-center">
         I also engage in <strong>UX/UI/PRODUCT Design</strong>, I have a wide range of knowledge in

@@ -17,7 +17,7 @@ const Home = (): JSX.Element => (
         className="homeWrapper flex flex-col items-center justify-center"
       >
         <div className="inner_wrap flex flex-col items-center justify-center">
-          <div className="image_holder flex items-center justify-center rounded-full mb-2 w-36 h-36 border-4 border-gray-50 shadow-md overflow-hidden transition animate-bounce-slow hover:border-green-500">
+          <div className="image_holder flex items-center justify-center rounded-full mb-2 w-36 h-36 border-4 border-gray-50 shadow-md overflow-hidden transition hover:border-green-500">
             <Image
               src={profileImage}
               className="w-full h-full rounded-full bg-cover"
@@ -29,12 +29,12 @@ const Home = (): JSX.Element => (
           <h3 className="dev_title text-xl tracking-wide font-semibold text-gray-400 md:tracking-widest text-center flex">
             <Typewriter
               options={{
-                strings: ['UX/UI', 'PRODUCT'],
+                strings: ['UX/UI Designer', 'Frontend developer'],
                 autoStart: true,
                 loop: true,
               }}
             />
-            &nbsp;DESIGNER
+            {/* &nbsp;DESIGNER */}
           </h3>
           <span className="w-1.5 h-4 my-1 border border-gray-50  bg-gray-200 dark:border-gray-400 dark:bg-blueGray-700 rounded-full shadow-sm"></span>
           <h1 className="dev_title text-2xl tracking-wide font-semibold text-gray-400 md:tracking-widest text-center">
