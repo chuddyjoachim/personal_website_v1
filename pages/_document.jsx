@@ -12,7 +12,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
-          <meta name="description" content="Joachim" />
+          <meta name="description" content="Joachim * Chikezie" />
           <meta name="chuddyjoachim" content="chuddyjoachim personal web site" />
           <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="./tavicon_io/favicon-32x32.png" />
