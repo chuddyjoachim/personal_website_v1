@@ -1,4 +1,5 @@
 import React, { createContext, FC, useEffect, useState } from 'react'
+import { themeKey } from '../lib/constants'
 import { themeContextType, themeType } from '../lib/types'
 
 export const themeContext = createContext<themeContextType>({
@@ -7,7 +8,6 @@ export const themeContext = createContext<themeContextType>({
 })
 
 const ThemeContextProvider: FC = ({ children }) => {
-  const themeKey = 'theme'
   let initThemeValue: themeType = 'light'
 
   const setThemeToLocalStorage = (key: string, value: themeType) => {
@@ -33,16 +33,12 @@ const ThemeContextProvider: FC = ({ children }) => {
 
   useEffect(() => {
     setThemeToLocalStorage(themeKey, theme)
-    theme === 'dark'
-      ? document.getElementsByTagName('html')[0].classList.add('dark')
-      : theme === 'light'
-      ? document.getElementsByTagName('html')[0].classList.remove('dark')
-      : ''
+    if (theme === 'dark') document.getElementsByTagName('html')[0].classList.add('dark')
+    else if (theme === 'light') document.getElementsByTagName('html')[0].classList.remove('dark')
   }, [theme])
 
   const setThemeHandler = () => {
-    theme == 'light' ? setTheme('dark') : theme == 'dark' ? setTheme('light') : ''
-    //   return void;
+    return theme == 'light' ? setTheme('dark') : theme == 'dark' ? setTheme('light') : null
   }
 
   return (

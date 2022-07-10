@@ -4,19 +4,23 @@
 
 @layer base {
   body {
-    @apply bg-white dark:bg-blueGray-900 transition text-custom-black;
+    @apply bg-white dark:bg-purple-x-900 transition text-slate-800;
   }
 }
 
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  outline: none !important;
+}
+
 @layer utilities {
-  /* body{
-    background: red;
-  } */
   .projectcard_left {
     max-width: 41.6667%;
     flex: 0 0 41.6667%;
   }
-  .fwhite{
-      background-color: #f9f9f9;
+  .fwhite {
+    background-color: #f9f9f9;
   }
 }

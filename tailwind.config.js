@@ -1,5 +1,5 @@
 const colors = require('tailwindcss/colors')
-// tailwind.config.js
+
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
@@ -14,6 +14,16 @@ module.exports = {
         'custom-black': '#191919',
         'custom-text': '#4c4c4c',
         'banner-grey': '#E8E8E8',
+        /*  */
+        'purple-x': {
+          300: '#8A1B8C',
+          400: '#6D156F',
+          600: '#581359',
+          900: '#280728',
+        },
+        'gray-x': {
+          txt: '#9e9ea7',
+        },
       },
     },
     colors: {
@@ -22,6 +32,13 @@ module.exports = {
       gray: colors.gray,
       blueGray: colors.slate,
       white: colors.white,
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+      },
     },
   },
   variants: {

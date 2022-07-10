@@ -1,18 +1,24 @@
 import 'tailwindcss/tailwind.css'
 import '../styles/tailwind.css'
-import type { AppProps } from 'next/app'
 import React from 'react'
 import ThemeContextProvider from '../context/ThemeContext'
 import PTabContextProvider from '../context/portfolioTabContext'
 import { AnimateSharedLayout } from 'framer-motion'
+import { MyAppProps } from '../lib/pageLayout'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: MyAppProps) {
   return (
     <ThemeContextProvider>
       <PTabContextProvider>
-      <AnimateSharedLayout>
-        <Component {...pageProps} />
-      </AnimateSharedLayout>
+        <AnimateSharedLayout>
+          {Component.Layout ? (
+            <Component.Layout>
+              <Component {...pageProps} />
+            </Component.Layout>
+          ) : (
+            <Component {...pageProps} />
+          )}
+        </AnimateSharedLayout>
       </PTabContextProvider>
     </ThemeContextProvider>
   )
