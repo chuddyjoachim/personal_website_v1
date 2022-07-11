@@ -13,20 +13,19 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta name="description" content="Joachim * Chikezie" />
-          <meta name="chuddyjoachim" content="chuddyjoachim personal web site" />
+          <meta
+            name="chuddyjoachim"
+            content="chuddyjoachim - Joachim chikezie's personal web site"
+          />
           <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="./tavicon_io/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
           <link rel="manifest" href="./site.webmanifest" />
-          <meta
-            data-react-helmet="true"
-            property="og:title"
-            content="chikezie joachim - chuddyjoachim"
-          />
+          <meta data-react-helmet="true" property="og:title" content="chikezie joachim" />
           <meta
             data-react-helmet="true"
             property="og:description"
-            content="product designer and software developer in lagos nigeria more of a personal website, including social media contact links"
+            content="software engineer & product designer in lagos nigeria, product oriented Web and mobile engineer with design knowledge and experience"
           />
           <meta property="og:url" content="https://www.chuddyjoachim.com/" />
           <meta
