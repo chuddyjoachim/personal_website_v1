@@ -34,8 +34,8 @@ const Header = () => {
               </span>
             </h1>
           </div>
-          <p className=" lg:text-2xl font-light py-7 text-gray-500 dark:text-gray-300 text-center lg:text-left">
-            A creative Web and Mobile Engineer capable of working in variety of culture and dynamic
+          <p className=" lg:text-xl py-7 text-gray-500 dark:text-gray-300 text-center lg:text-left">
+            A creative Web and Mobile Engineer capable of working in a variety of culture and dynamic
             settings, Experienced with the Product Development Life Cycle (PDLC), which includes
             designing and implementing, debugging, fixing, and maintaining the application software.
           </p>
