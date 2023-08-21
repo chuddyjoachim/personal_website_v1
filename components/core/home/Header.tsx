@@ -34,10 +34,14 @@ const Header = () => {
               </span>
             </h1>
           </div>
-          <p className=" lg:text-xl py-7 text-gray-500 dark:text-gray-300 text-center lg:text-left">
-            A creative Web and Mobile Engineer capable of working in a variety of culture and dynamic
-            settings, Experienced with the Product Development Life Cycle (PDLC), which includes
-            designing and implementing, debugging, fixing, and maintaining the application software.
+          <p className=" lg:text-lg py-7 !font-medium text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            A creative Software Engineer Experienced in building beautiful interfaces for web
+            and mobile applications, extensive knowledge in design thinking, and also have attained
+            proficiency in using design tools.
+            <div className="h-1.5" />
+            Experienced with the Software Development Life Cycle, which includes designing and
+            implementing, debugging, and maintaining the application software ad capable of
+            working in a variety of culture and dynamic settings.
           </p>
           <div className="">
             <div className=" flex flex-row justify-center lg:justify-start space-x-6 text-2xl font-light dark:text-white  opacity-40 dark:opacity-80">
