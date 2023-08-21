@@ -38,7 +38,7 @@ const Header = () => {
             A creative Software Engineer Experienced in building beautiful interfaces for web
             and mobile applications, extensive knowledge in design thinking, and also have attained
             proficiency in using design tools.
-            <div className="h-1.5" />
+            <br/>
             Experienced with the Software Development Life Cycle, which includes designing and
             implementing, debugging, and maintaining the application software ad capable of
             working in a variety of culture and dynamic settings.

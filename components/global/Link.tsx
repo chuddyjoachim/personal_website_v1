@@ -12,15 +12,13 @@ const Link: FC<LinkProp> = ({ to, children, className, isExternal = false }) => 
   return (
     <>
       {isExternal && (
-        <NextLink href={to} passHref>
-          <a target={'_blank'} rel="noreferrer" href={to as string} className={className}>
-            {children}
-          </a>
+        <NextLink href={to} passHref target={'_blank'} rel="noreferrer" className={className}>
+          {children}
         </NextLink>
       )}
       {!isExternal && (
-        <NextLink href={to}>
-          <a className={className}>{children}</a>
+        <NextLink href={to} className={className}>
+          {children}
         </NextLink>
       )}
     </>
