@@ -1,4 +1,3 @@
-import { PrjectCardProps } from '../components/projectcard'
 import { iconType } from '../lib/types'
 import flexvest from '/assets/projectimages/ui/flexvest.png'
 import vergecomerce from '/assets/projectimages/ui/vergecomerce.png'
