@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FiDribbble, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
-import { FaBehance } from 'react-icons/fa'
+import { FaBehance, FaCode, FaPen } from 'react-icons/fa'
 import { HiChevronRight } from 'react-icons/hi'
 import Link from '../../global/Link'
 import Button from '../../global/Button'
@@ -73,17 +73,35 @@ const Header = () => {
                 </div>
               ))}
             </div>
-            <div className="w-52">
-              <Button
-                type="button"
-                block
-                size="lg"
-                className="mt-6 mb-5 text-xl font-bold select-none"
-                rightIcon={<HiChevronRight />}
-                onClick={() => setIsOptionOpen((v) => !v)}
-              >
-                Explore
-              </Button>
+            <div className="py-10">
+              {/* <small className=" text-xl font-semibold underline underline-offset-2 dark:text-white text-center block">Explore:</small> */}
+              <div className="flex gap-4 mt-3">
+                <div className="">
+                  <Button
+                    type="button"
+
+                    size="md"
+                    className="font-bold select-none border-2 border-purple-x-900"
+                    rightIcon={<FaCode />}
+                    onClick={() => setIsOptionOpen((v) => !v)}
+                  >
+                    Work
+                  </Button>
+                </div>
+                <div className="">
+                  <Button
+                    type="button"
+                    variant='outlined'
+
+                    size="md"
+                    className="font-bold select-none dark:text-gray-50 dark:border-gray-50"
+                    rightIcon={<FaPen size={12} />}
+                    onClick={() => setIsOptionOpen((v) => !v)}
+                  >
+                    Writting
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
