@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FiDribbble, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 import { FaBehance, FaCode, FaPen } from 'react-icons/fa'
-import { HiChevronRight } from 'react-icons/hi'
+import { PiNotepadBold, PiNotepadThin } from 'react-icons/pi'
 import Link from '../../global/Link'
 import Button from '../../global/Button'
 import { AnimatePresence } from 'framer-motion'
@@ -35,25 +35,25 @@ const Header = () => {
             </h1>
           </div>
           <div className="py-7">
-            <p className="text-sm md:text-base font-normal lg:text-lg mb-3 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm md:text-base font-normal lg:text-base mb-3 text-gray-400 dark:text-gray-300 text-center lg:text-left">
               A Product-oriented software engineer with over 4+ years of experience and deep focus
               in frontend engineering,
             </p>
-            <p className="text-sm md:text-base font-normal lg:text-lg mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
               In my journey so far I've Lead various frontend engineering roles with extensive
               experience in building and maintaining complex frontend systems this includes design
-              systems, payment SDK, e.t.c.
+              systems, payment SDK, as well as backend technologies.
             </p>
-            <p className="text-sm md:text-base font-normal lg:text-lg mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
               I possess a keen eye for detail and consistent focus on creating high quality
               user-centered solution and user-friendly interfaces for web and mobile applications
               leveraging deep understanding of design thinking,
             </p>
-            <p className="text-sm md:text-base font-normal lg:text-lg mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
-              Worked on backend services, and have an understanding of how the monilith and
-              microservice architecture works.
+            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+              contributed to open-source projects, freelance projects and developed mobile
+              applications.
             </p>
-            <p className="text-sm hidden md:text-base font-normal lg:text-lg mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm hidden md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
               A creative Software Engineer Experienced in building beautiful interfaces for web and
               mobile applications, extensive knowledge in design thinking, and also have attained
               proficiency in using design tools.
@@ -79,7 +79,6 @@ const Header = () => {
                 <div className="">
                   <Button
                     type="button"
-
                     size="md"
                     className="font-bold select-none border-2 border-purple-x-900"
                     rightIcon={<FaCode />}
@@ -91,14 +90,13 @@ const Header = () => {
                 <div className="">
                   <Button
                     type="button"
-                    variant='outlined'
-
+                    variant="outlined"
                     size="md"
                     className="font-bold select-none dark:text-gray-50 dark:border-gray-50"
-                    rightIcon={<FaPen size={12} />}
+                    rightIcon={<PiNotepadBold size={18} />}
                     onClick={() => setIsOptionOpen((v) => !v)}
                   >
-                    Writting
+                    Articles
                   </Button>
                 </div>
               </div>
@@ -106,10 +104,10 @@ const Header = () => {
           </div>
         </div>
         <div className="flex justify-center items-center flex-1">
-          <div className="border-purple-x-300 border h-64 w-64 rounded-md relative">
+          <div className="border-purple-x-300 border h-64 w-56 rounded-md relative">
             <div className="flex-1 absolute w-full h-full top-2 left-2 -z-10 rounded-md border border-purple-x-400"></div>
             <div className="relative flex-1 flex justify-center items-center h-full">
-              <img src="/images/avatar/memoji-preview.png" alt="avatar" />
+              <img src="/images/avatar/jo.png" alt="avatar" className='w-full h-full object-cover ' />
             </div>
           </div>
         </div>

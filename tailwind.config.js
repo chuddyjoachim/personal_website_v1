@@ -25,6 +25,10 @@ module.exports = {
           txt: '#9e9ea7',
         },
       },
+      fontFamily: {
+        'ibm-flex-sans': ['IBM Plex Sans', 'sans-serif'],
+        'Rubik': ['Rubik', 'sans-serif'],
+      },
     },
     colors: {
       ...colors,

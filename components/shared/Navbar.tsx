@@ -25,19 +25,19 @@ const Nav: FC<NavBarProps> = ({ showBackButton = false, onBack, title }) => {
             <ul className="flex items-center space-x-5 uppercase">
               <li className="">
                 <Link to="/">
-                  <p className="font-medium">Portfolio</p>
+                  <p className="font-Rubik font-bold">Joachim</p>
                 </Link>
               </li>
-              <li className="">
+              {/* <li className="">
                 <Link to="/">
                   <p className="font-medium">Contact</p>
                 </Link>
-              </li>
-              <li className="">
+              </li> */}
+              {/* <li className="">
                 <Link to="/">
                   <p className="font-medium">Resume</p>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           )}
           {!!title && showBackButton && <p className="font-semibold uppercase">{title}</p>}
