@@ -35,25 +35,25 @@ const Header = () => {
             </h1>
           </div>
           <div className="py-7">
-            <p className="text-sm md:text-base font-normal lg:text-base mb-3 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm md:text-base font-normal lg:text-base mb-3 text-gray-400 dark:text-gray-300 ">
               A Product-oriented software engineer with over 4+ years of experience and deep focus
               in frontend engineering,
             </p>
-            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 ">
               In my journey so far I've Lead various frontend engineering roles with extensive
               experience in building and maintaining complex frontend systems this includes design
               systems, payment SDK, as well as backend technologies.
             </p>
-            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 ">
               I possess a keen eye for detail and consistent focus on creating high quality
               user-centered solution and user-friendly interfaces for web and mobile applications
               leveraging deep understanding of design thinking,
             </p>
-            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 ">
               contributed to open-source projects, freelance projects and developed mobile
               applications.
             </p>
-            <p className="text-sm hidden md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 text-center lg:text-left">
+            <p className="text-sm hidden md:text-base font-normal lg:text-base mb-2 text-gray-400 dark:text-gray-300 ">
               A creative Software Engineer Experienced in building beautiful interfaces for web and
               mobile applications, extensive knowledge in design thinking, and also have attained
               proficiency in using design tools.
@@ -106,8 +106,12 @@ const Header = () => {
         <div className="flex justify-center items-center flex-1">
           <div className="border-purple-x-300 border h-64 w-56 rounded-md relative">
             <div className="flex-1 absolute w-full h-full top-2 left-2 -z-10 rounded-md border border-purple-x-400"></div>
-            <div className="relative flex-1 flex justify-center items-center h-full">
-              <img src="/images/avatar/jo.png" alt="avatar" className='w-full h-full object-cover ' />
+            <div className="relative flex-1 flex justify-center items-center h-full p-6">
+              <img
+                src="/images/avatar/jo1.png"
+                alt="avatar"
+                className="w-11/12 h-11/12 object-cover "
+              />
             </div>
           </div>
         </div>
